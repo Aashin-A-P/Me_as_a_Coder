@@ -1,15 +1,14 @@
-#include <stdio.h>
-int BinarySearch(int* arr,int size,int key){
-    int left = 0;
-    int right = size-1;
-    while(left<=right){
-        int mid = left + (right-left)/2;
-        if(arr[mid] == key)
+int binarysearch(int a[],int n,int val)
+{
+    int start=0,end=n-1,mid;
+    while(start<=end){
+        mid=(start+end)/2;
+        if(a[mid]==val)
             return mid+1;
-        else if(key<arr[mid])
-            right = mid-1;
+        else if(a[mid]>val)
+            end=mid-1;
         else
-            left = mid+1;
+            start=mid+1;
     }
     return -1;
 }

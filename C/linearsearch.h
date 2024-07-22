@@ -1,7 +1,7 @@
-#include <stdio.h>
-int LinearSearch(int* arr,int size,int key){
-    for(int i=0;i<size;i++)
-        if(arr[i]==key)
+int linearsearch(int a[],int n,int val)
+{
+    for(int i=0;i<n;i++)
+        if (val==a[i])
             return i+1;
     return -1;
 }
