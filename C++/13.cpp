@@ -4,9 +4,11 @@ int main(){
     int n;
     cout << "Enter n:";
     cin >> n;
+    int a=1;
     for(int i=1;i<=n;i++){
-        for(int j=1;j<=n;j++){
-            cout << "* ";
+        for(int j=1;j<=i;j++){
+            cout << a << " ";
+            a++;
         }
         cout << endl;
     }

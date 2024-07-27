@@ -1,12 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main(){
-    int f=10;
-    int* ptr;
-    int &value=f;
-    ptr=&f;
-    cout<<value<<" "<<*ptr<<" "<<f<<endl;
-    ++*ptr;
-    cout<<value<<" "<<*ptr<<" "<<f<<endl;
+    int n;
+    cout << "Enter n:";
+    cin >> n;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
     return 0;
 }
