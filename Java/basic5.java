@@ -18,5 +18,6 @@ public class basic5 {
         System.out.println("Enter no of terms:");
         n = sc.nextInt();
         printseries(n);
+        System.out.println();
     }
 }
