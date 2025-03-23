@@ -1,0 +1,12 @@
+# Ignore Java class files
+*.class
+
+# Ignore compiled C/C++ files
+*.o
+*.obj
+*.exe
+*.out
+
+# Ignore temporary files
+*~
+*.swp
