@@ -3,6 +3,7 @@
 #include<stdio.h>
 int main()
 {
+    int n=0;
     float h,w,peri;
     printf("Enter height of the rectangle:\n");
     scanf("%f",&h);
